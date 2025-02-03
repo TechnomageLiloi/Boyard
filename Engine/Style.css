@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+  background-color: silver;
+}
+body {
+  margin: 5px;
+  padding: 5px;
+  height: 90%;
+  font-family: monospace;
+  border: maroon 3px solid;
+  border-radius: 5px;
+  background-color: white;
+}
+body a {
+  text-decoration: none;
+  color: red;
+}
+body #head,
+body #ticket-current {
+  padding: 10px;
+  text-align: center;
+  background-color: #ffffd0;
+}
+body #page {
+  background-color: white;
+  padding: 10px;
+  height: 90%;
+  overflow-y: scroll;
+}
+body #page .controls {
+  background-color: #ebefff;
+  padding: 10px;
+}
+body #page .window {
+  padding: 10px;
+  border: gray 3px solid;
+  border-radius: 5px;
+}
+body a.butn {
+  border: red 1px solid;
+  padding: 2px;
+  background-color: #ffebeb;
+  border-radius: 5px;
+}
+body a.butn:hover {
+  background-color: #ffffeb;
+}

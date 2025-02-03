@@ -1,0 +1,15 @@
+#modules-maps-show {
+  background-color: white;
+  height: 90%;
+}
+#modules-maps-show .local-buttons {
+  background-color: #e9ffe8;
+  text-align: center;
+  padding: 10px;
+}
+#modules-maps-show .map {
+  font-size: xx-large;
+}
+#modules-maps-show .map img {
+  float: right;
+}
