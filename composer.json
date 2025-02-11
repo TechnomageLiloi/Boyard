@@ -1,5 +1,5 @@
 {
-    "name": "technomage-liloi/i60",
+    "name": "technomage-liloi/rune",
     "keywords": [
     ],
     "minimum-stability": "dev",
@@ -20,8 +20,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Liloi\\I60\\": ["Engine", "Tests"],
-            "Liloi\\I60\\Modules\\": "Modules"
+            "Liloi\\Rune\\": ["Engine", "Tests"],
+            "Liloi\\Rune\\Modules\\": "Modules"
         }
     }
 }

@@ -1,11 +1,11 @@
 <?php
 
-namespace Liloi\I60\API;
+namespace Liloi\Rune\API;
 
 use Liloi\API\Manager;
 use Liloi\API\Method;
-use Liloi\I60\API\Method as RuneMethod;
-use Liloi\I60\Modules\Modules;
+use Liloi\Rune\API\Method as RuneMethod;
+use Liloi\Rune\Modules\Modules;
 
 /**
  * @inheritDoc

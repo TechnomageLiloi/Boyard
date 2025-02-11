@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\I60\Exceptions;
+namespace Liloi\Rune\Exceptions;
 
 use Liloi\Judex\ExtendedException;
 

@@ -23,7 +23,7 @@
     <body>
         <div id="page" class="stylo">
             <script>
-                I60.Maps.show();
+                Rune.Maps.show();
             </script>
         </div>
     </body>

@@ -1,7 +1,7 @@
-I60.Maps = {
+Rune.Maps = {
     show: function ()
     {
-        API.request('I60.Maps.Show', {
+        API.request('Rune.Maps.Show', {
 
         }, function (data) {
             $('#page').html(data.render);

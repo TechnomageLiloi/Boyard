@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\I60\Modules\Maps\API\Show;
+namespace Liloi\Rune\Modules\Maps\API\Show;
 
 use Liloi\API\Response;
-use Liloi\I60\API\Method as SuperMethod;
+use Liloi\Rune\API\Method as SuperMethod;
 
 class Method extends SuperMethod
 {
