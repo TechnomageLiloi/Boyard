@@ -13,17 +13,18 @@
         <link href="/Engine/Style.css" rel="stylesheet" />
 
         <script src="/Engine/API/Requests.js"></script>
+        <script src="/Engine/API/Vertex/Requests.js"></script>
 
         <script src="/Engine/Bootstrap.js"></script>
 
-        <script src="/Modules/Maps/API/Requests.js"></script>
+
 
         <title>Rune</title>
     </head>
     <body>
         <div id="page" class="stylo">
             <script>
-                I60.Maps.show();
+                I60.Vertex.show();
             </script>
         </div>
     </body>

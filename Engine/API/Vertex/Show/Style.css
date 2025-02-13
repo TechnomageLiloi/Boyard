@@ -1,0 +1,10 @@
+#atoms-show table {
+  width: 100%;
+}
+#atoms-show table th {
+  text-align: left;
+  border-bottom: gray 1px dashed;
+}
+#atoms-show table td {
+  border-bottom: gray 1px dashed;
+}

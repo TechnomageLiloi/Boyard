@@ -32,6 +32,8 @@ class Tree
         {
             $manager = new Manager();
 
+            $manager->add(new Method('I60.Vertex.Show', '\Liloi\I60\API\Vertex\Show\Method::execute'));
+
             $manager = Modules::collect($manager);
 
             self::$instance = new self($manager);
