@@ -14,6 +14,7 @@
 
         <script src="/Engine/API/Requests.js"></script>
         <script src="/Engine/API/Vertex/Requests.js"></script>
+        <script src="/Engine/API/Questions/Requests.js"></script>
 
         <script src="/Engine/Bootstrap.js"></script>
 

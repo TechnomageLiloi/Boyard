@@ -32,6 +32,15 @@ class Tree
         {
             $manager = new Manager();
 
+            $manager->add(new Method('I60.Questions.Collection', '\Liloi\I60\API\Questions\Collection\Method::execute'));
+            $manager->add(new Method('I60.Questions.Create', '\Liloi\I60\API\Questions\Create\Method::execute'));
+            $manager->add(new Method('I60.Questions.Remove', '\Liloi\I60\API\Questions\Remove\Method::execute'));
+            $manager->add(new Method('I60.Questions.Edit', '\Liloi\I60\API\Questions\Edit\Method::execute'));
+            $manager->add(new Method('I60.Questions.Save', '\Liloi\I60\API\Questions\Save\Method::execute'));
+            $manager->add(new Method('I60.Questions.Show', '\Liloi\I60\API\Questions\Show\Method::execute'));
+            $manager->add(new Method('I60.Questions.Test', '\Liloi\I60\API\Questions\Test\Method::execute'));
+            $manager->add(new Method('I60.Questions.Suite', '\Liloi\I60\API\Questions\Suite\Method::execute'));
+
             $manager->add(new Method('I60.Vertex.Show', '\Liloi\I60\API\Vertex\Show\Method::execute'));
 
             $manager = Modules::collect($manager);
