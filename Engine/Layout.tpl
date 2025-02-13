@@ -17,8 +17,6 @@
 
         <script src="/Engine/Bootstrap.js"></script>
 
-
-
         <title>Rune</title>
     </head>
     <body>
