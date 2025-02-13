@@ -1,11 +1,11 @@
 <?php
 
-namespace Liloi\Rune;
+namespace Liloi\I60;
 
 use Liloi\Config\Pool;
-use Liloi\Rune\API\Method;
-use Liloi\Rune\API\Tree;
-use Liloi\Rune\Domain\Manager;
+use Liloi\I60\API\Method;
+use Liloi\I60\API\Tree;
+use Liloi\I60\Domain\Manager;
 use Rune\Application\Conceptual as ConceptualApplication;
 
 /**

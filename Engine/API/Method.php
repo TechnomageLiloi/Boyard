@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\Rune\API;
+namespace Liloi\I60\API;
 
 use Liloi\Config\Pool;
 use Liloi\Judex\Assert;

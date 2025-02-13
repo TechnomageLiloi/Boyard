@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\Rune\Exceptions;
+namespace Liloi\I60\Exceptions;
 
 class NotFoundException extends RuneException
 {

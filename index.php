@@ -9,7 +9,7 @@ try {
     include_once ROOT_DIR . '/vendor/autoload.php';
 
     $config = include ROOT_DIR . '/Config/Block.php';
-    echo (new Liloi\Rune\Application($config))->compile();
+    echo (new Liloi\I60\Application($config))->compile();
 }
 catch(Throwable $e)
 {

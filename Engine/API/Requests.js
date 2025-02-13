@@ -1,4 +1,4 @@
-var Rune = {
+var I60 = {
     Services: {
         loadFromServer: function loadFile(filePath) {
             let result = null;
