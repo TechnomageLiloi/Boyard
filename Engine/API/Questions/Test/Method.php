@@ -13,8 +13,8 @@ class Method extends SuperMethod
 {
     public static function execute(): Response
     {
-        $key_question = self::getParameter('key_question');
-        $entity = Manager::load($key_question);
+        $path = ROOT_DIR . '/' . self::getParameter('link');
+        $entity = Manager::load($path);
 
         $response = new Response();
         $response->set('render', self::renderTest($entity));

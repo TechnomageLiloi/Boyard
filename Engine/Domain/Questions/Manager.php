@@ -61,15 +61,10 @@ class Manager extends DomainManager
         return $collection;
     }
 
-    public static function load(string $key_question): Entity
+    public static function load(string $link): Entity
     {
-        $name = self::getTableName();
-
-        $row = self::getAdapter()->getRow(sprintf(
-            'select * from %s where key_question="%s"',
-            $name,
-            $key_question
-        ));
+        $row = json_decode(file_get_contents($link), true);
+        $row['key_question'] = strtolower(trim(str_replace(['/', '.'], ['-','-'], $link), '-'));
 
         return Entity::create($row);
     }

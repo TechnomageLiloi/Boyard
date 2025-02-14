@@ -64,10 +64,10 @@ I60.Questions = {
         });
     },
 
-    test: function (key_question)
+    test: function (link)
     {
         API.request('I60.Questions.Test', {
-            'key_question': key_question
+            'link': link
         }, function (data) {
             $('#page').html(data.render);
         }, function () {

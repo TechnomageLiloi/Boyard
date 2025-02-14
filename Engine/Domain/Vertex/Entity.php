@@ -27,7 +27,7 @@ class Entity extends AbstractEntity
         else if(pathinfo($path, PATHINFO_EXTENSION) === 'quest')
         {
             $ahref = '<a href="javascript:void(0);" onclick="%s">%s</a>';
-            $link = sprintf("I60.Questions.show('%s');", '/Root' . str_replace(Manager::ROOT, '', $path));
+            $link = sprintf("I60.Questions.test('%s');", '/Root' . str_replace(Manager::ROOT, '', $path));
         }
         else
         {
