@@ -10,10 +10,10 @@ I60.Questions = {
         });
     },
 
-    show: function (key_question)
+    show: function (link)
     {
         API.request('I60.Questions.Show', {
-            'key_question': key_question
+            'link': link
         }, function (data) {
             $('#page').html(data.render);
         }, function () {

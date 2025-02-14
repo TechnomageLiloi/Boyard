@@ -8,9 +8,7 @@
         <?php foreach($collection as $entity): ?>
             <tr>
                 <td>
-                    <a href="<?php echo $entity->getLink(); ?>">
-                        <?php echo $entity->getTitle(); ?>
-                    </a>
+                    <?php echo $entity->getLink(); ?>
                 </td>
                 <td>
                     <?php echo $entity->getExtension(); ?>
