@@ -20,9 +20,6 @@ use Liloi\Stylo\Parser;
  * @method string getProgram()
  * @method void setProgram(string $value)
  *
- * @method string getTheory()
- * @method void setTheory(string $value)
- *
  * @method string getTags()
  * @method void setTags(string $value)
  *
@@ -103,9 +100,33 @@ class Entity extends AbstractEntity
 
     public function getQuestion(): string
     {
-        $raw = implode("\n", $this->getElement('question'));
+        $raw = $this->getElement('question');
+
+        if(is_array($raw))
+        {
+            $raw = implode("\n", $raw);
+        }
+
         $path = dirname($this->getLink());
         $raw = str_replace('](./', '](' . $path . '/', $raw);
+
+        return Parser::parseString($raw);
+    }
+
+    public function getTheory(): string
+    {
+        $program = (array)$this->getProgram();
+        if(!isset($program['theory']))
+        {
+            return 'There is no theory.';
+        }
+
+        $raw = $this->getElement('theory');
+
+        if(is_array($raw))
+        {
+            $raw = implode("\n", $raw);
+        }
 
         return Parser::parseString($raw);
     }
