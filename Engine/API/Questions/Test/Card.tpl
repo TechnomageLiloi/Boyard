@@ -19,7 +19,7 @@
     <div class="question">
         <a href="javascript:void(0)" onclick="Testing.turnAround('<?php echo $entity->getKey(); ?>');">Turn around</a>
         <hr/>
-        <?php echo $entity->getElementStylo('question'); ?>
+        <?php echo $entity->getQuestion(); ?>
     </div>
 
     <div class="answer" style="display: none;">

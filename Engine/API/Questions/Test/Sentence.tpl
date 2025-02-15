@@ -13,7 +13,7 @@
     <a href="javascript:void(0)" onclick="Testing.checkSentence('<?php echo $entity->getKey(); ?>');">Check</a>
     <hr/>
     <div class="sentence">
-        <?php $sentence = $entity->getElementStylo('sentence'); ?>
+        <?php $sentence = $entity->getElement('sentence'); ?>
 
         <?php foreach($sentence as $block): ?>
             <?php if(str_starts_with($block, '==')): ?>

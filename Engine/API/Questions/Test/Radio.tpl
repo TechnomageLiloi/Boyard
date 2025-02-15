@@ -13,7 +13,7 @@
     <div class="question">
         <a href="javascript:void(0)" onclick="Testing.checkRadio('<?php echo $entity->getKey(); ?>');">Check</a>
         <hr/>
-        <?php echo $entity->getElementStylo('question'); ?>
+        <?php echo $entity->getQuestion(); ?>
     </div>
 
     <div class="answer">

@@ -31,6 +31,9 @@ use Liloi\Stylo\Parser;
  *
  * @method string getData()
  * @method void setData(string $value)
+ *
+ * @method string getLink()
+ * @method void setLink(string $value)
 
  */
 class Entity extends AbstractEntity
@@ -94,6 +97,15 @@ class Entity extends AbstractEntity
         {
             $raw = implode("\n", $raw);
         }
+
+        return Parser::parseString($raw);
+    }
+
+    public function getQuestion(): string
+    {
+        $raw = implode("\n", $this->getElement('question'));
+        $path = dirname($this->getLink());
+        $raw = str_replace('](./', '](' . $path . '/', $raw);
 
         return Parser::parseString($raw);
     }

@@ -63,8 +63,10 @@ class Manager extends DomainManager
 
     public static function load(string $link): Entity
     {
-        $row = json_decode(file_get_contents($link), true);
-        $row['key_question'] = strtolower(trim(str_replace(['/', '.', '\\', ':'], ['-','-','-','-'], $link), '-'));
+        $path = ROOT_DIR . '/' . $link;
+        $row = json_decode(file_get_contents($path), true);
+        $row['key_question'] = strtolower(trim(str_replace(['/', '.', '\\', ':'], ['-','-','-','-'], $path), '-'));
+        $row['link'] = $link;
 
         return Entity::create($row);
     }
