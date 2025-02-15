@@ -85,4 +85,16 @@ class Entity extends AbstractEntity
         $this->setStatus(Statuses::OBSOLETE);
         $this->save();
     }
+
+    public function getElementStylo(string $key)
+    {
+        $raw = $this->getElement($key);
+
+        if(is_array($raw))
+        {
+            $raw = implode("\n", $raw);
+        }
+
+        return Parser::parseString($raw);
+    }
 }
