@@ -36,7 +36,10 @@ class Method extends SuperMethod
             default: $template = 'Card';
         }
 
-        return static::render(__DIR__ . '/' . $template . '.tpl', [
+        return static::render(__DIR__ . '/Question.tpl', [
+            'test' => static::render(__DIR__ . '/' . $template . '.tpl', [
+                'entity' => $entity
+            ]),
             'entity' => $entity
         ]);
     }
