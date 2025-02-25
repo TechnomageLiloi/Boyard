@@ -128,6 +128,9 @@ class Entity extends AbstractEntity
             $raw = implode("\n", $raw);
         }
 
+        $path = dirname($this->getLink());
+        $raw = str_replace('](./', '](' . $path . '/', $raw);
+
         return Parser::parseString($raw);
     }
 }

@@ -70,6 +70,7 @@ I60.Questions = {
             'link': link
         }, function (data) {
             $('#page').html(data.render);
+            Rune.Trigger.initialize();
         }, function () {
 
         });

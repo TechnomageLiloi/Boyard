@@ -1,3 +1,5 @@
+Rune = {};
+
 Rune.Trigger = {
     initialize: function ()
     {
